@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg2log.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="784.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="layer1" layoutX="309.0" prefHeight="403.0" prefWidth="444.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="user2" fitHeight="67.0" fitWidth="91.0" layoutX="274.0" layoutY="132.0" onMouseClicked="#user2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/JANAKA/Documents/NetBeansProjects/2log/test/user_shield2_100px.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="userl2" layoutX="279.0" layoutY="248.0" onMouseClicked="#user2" text="User">
+                     <font>
+                        <Font size="26.0" />
+                     </font></Label>
+                  <Label fx:id="userl1" layoutX="112.0" layoutY="248.0" onMouseClicked="#usr1" text="Admin">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="user1" fitHeight="70.0" fitWidth="103.0" layoutX="99.0" layoutY="132.0" onMouseClicked="#usr1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/JANAKA/Documents/NetBeansProjects/2log/test/user_shield_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="u1n" layoutX="46.0" layoutY="166.0" text="Name">
+                     <font>
+                        <Font name="Poor Richard" size="17.0" />
+                     </font></Label>
+                  <Label fx:id="u1p" layoutX="44.0" layoutY="221.0" text="Password">
+                     <font>
+                        <Font name="Poor Richard" size="17.0" />
+                     </font></Label>
+                  <JFXPasswordField fx:id="pfield" layoutX="151.0" layoutY="218.0" prefHeight="25.0" prefWidth="190.0" />
+                  <JFXTextField fx:id="nfield" layoutX="151.0" layoutY="164.0" prefHeight="25.0" prefWidth="190.0" />
+                  <Label fx:id="select" layoutX="161.0" layoutY="63.0" text="Select User">
+                     <font>
+                        <Font name="Monospaced Regular" size="20.0" />
+                     </font></Label>
+                  <Label fx:id="u1head" layoutX="186.0" layoutY="63.0" text="User 1">
+                     <font>
+                        <Font name="Monospaced Regular" size="20.0" />
+                     </font></Label>
+                  <JFXButton fx:id="logbtn" buttonType="RAISED" layoutX="151.0" layoutY="323.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #2363da;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="MT Extra" size="16.0" />
+                     </font></JFXButton>
+                  <Label fx:id="email" layoutX="46.0" layoutY="278.0" text="E - mail">
+                     <font>
+                        <Font name="Poor Richard" size="17.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="efield" layoutX="151.0" layoutY="274.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter your e-mail" />
+                  <JFXButton fx:id="signbtn" buttonType="RAISED" layoutX="199.0" layoutY="336.0" style="-fx-background-color: #2363da;" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font name="MT Extra" size="16.0" />
+                     </font></JFXButton>
+                  <Label fx:id="u2head" layoutX="186.0" layoutY="63.0" text="User 2">
+                     <font>
+                        <Font name="Monospaced Regular" size="20.0" />
+                     </font></Label>
+                  <JFXButton fx:id="canselbtn" buttonType="RAISED" layoutX="239.0" layoutY="323.0" onMouseClicked="#cancel" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #2363da;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="MT Extra" size="16.0" />
+                     </font></JFXButton>
+                  <Label fx:id="fpword" layoutX="150.0" layoutY="247.0" onMouseClicked="#forgot" text="Forgot Password?" textFill="#2363da">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="okbtn" buttonType="RAISED" layoutX="362.0" layoutY="274.0" style="-fx-background-color: #bf2e2e;" text="OK" textFill="WHITE" />
+                  <Label fx:id="acchead" layoutX="139.0" layoutY="63.0" text="Create Account">
+                     <font>
+                        <Font name="Monospaced Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="layer2" prefHeight="403.0" prefWidth="309.0" style="-fx-background-color: #300d33;">
+               <children>
+                  <JFXButton fx:id="signslider" buttonType="RAISED" layoutX="125.0" layoutY="200.0" onAction="#slideright" onMouseClicked="#slideright" text="LOG IN" textFill="WHITE" />
+                  <JFXButton fx:id="accbtn" buttonType="RAISED" layoutX="97.0" layoutY="200.0" onAction="#slide" onMouseClicked="#slide" text="CREATE ACCOUNT" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
